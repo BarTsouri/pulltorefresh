@@ -1,0 +1,53 @@
+
+@mixin spanAttr($height) {
+  width: $height;
+  font-size: $height;
+  line-height: $height;
+  height:$height;
+}
+
+$refresher-height-android: 40px;
+$padding: 10px;
+
+#refresher{
+  display:-webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-transform: translate3d(0,0,0);
+  position: absolute;
+  top: -$refresher-height-android - 2*$padding;
+  pointer-events: none;
+}
+
+
+#refresher {
+  color: #555555;
+  padding: $padding;
+  z-index: 2;
+  background-color: #fafafa;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  left: calc(50% - #{$refresher-height-android / 2} - #{$padding});
+  height: $refresher-height-android;
+  width: $refresher-height-android;
+
+  span{
+    position: absolute;
+
+
+    @include spanAttr($refresher-height-android);
+
+    &.tablet{
+      top: 10px;
+      left: 12px;
+      -webkit-transform-origin: 18px 20px;
+    }
+
+    &:not(.tablet){
+      top: 6px;
+      left: 7px;
+      -webkit-transform-origin: 20px 20px;
+    }
+  }
+}

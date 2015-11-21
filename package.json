@@ -1,0 +1,36 @@
+{
+  "name": "capriza-store",
+  "version": "1.0.0",
+  "description": "The Capriza Store",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "cssnano": "^3.3.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "~0.5.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-dom-munger": "~2.0.1",
+    "grunt-manifest": "~0.4.0",
+    "grunt-postcss": "^0.7.0",
+    "grunt-sass": "^1.0.0",
+    "grunt-usemin": "git://github.com/capriza/grunt-usemin.git#v2.0",
+    "load-grunt-tasks": "^3.2.0",
+    "node-sass": "^3.2.0",
+    "pixrem": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.assembla.com:capriza.5.git"
+  },
+  "author": "Capriza",
+  "readmeFilename": "README.md",
+  "license": "none"
+}
