@@ -96,7 +96,7 @@
 						console.log('pull to refresh - finished');
 						stopSpin();
 						autoMove.toInitPos(function(){ isInteractive = true; });
-					}, 750);
+					}, 5000);
 				});
 			} else {
 				autoMove.toInitPos(function(){isInteractive = true});
